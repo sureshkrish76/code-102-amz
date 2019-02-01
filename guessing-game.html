@@ -10,15 +10,28 @@
            var user = prompt('what is your name?');
            console.log('User Name:'+user); 
            alert('Hi there '+ user + 'I\'m going to ask you a question.');
-           var answer = prompt(user+'This is a yes/no question. Please answer Y or N. Do you love coding?');
-           console.log('Answer:'+answer);
-           if (answer === 'Y' || answer === 'y') {
-               alert ('Great, I love coding too');
-           }
-           else {
-               alert('You are in the wrong class');
-           }
-           
-       </script>
+            var answer = prompt(user+'This is a yes/no question. Please answer Y or N. Do you love coding?');
+           console.log('Answer:'+answer.toUpperCase());
+           if (answer) {
+                if (answer.toUpperCase() === 'Y' ) {
+                    for (i=1;i<4;i++) {
+                        if (i===1) {
+                            alert ('Great '+user+ ' I too love C');
+                        }
+                        if (i===2) {
+                            alert ('Great '+user+ ' I too love C++');
+                        }
+                        if (i===3) {
+                            alert ('Great '+user+ ' I too love PeopleSoft');
+                        }
+                        //alert ('Great, I love coding too');
+                    }
+                }else {
+                    alert('You are in the wrong class');
+                }
+             } else {
+                alert('Enter Valid Answer Y or N');
+             }
+        </script>
     </body>
 </html>
