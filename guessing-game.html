@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guessing Game Demo</title>
+    </head>
+    <body>
+       <!-- body content goes here -->
+       <h1>Guessing Game</h1>
+       <script>
+           var user = prompt('what is your name?');
+           console.log('User Name:'+user); 
+           alert('Hi there '+ user + 'I\'m going to ask you a question.');
+           var answer = prompt(user+'This is a yes/no question. Please answer Y or N. Do you love coding?');
+           console.log('Answer:'+answer);
+           if (answer === 'Y' || answer === 'y') {
+               alert ('Great, I love coding too');
+           }
+           else {
+               alert('You are in the wrong class');
+           }
+           
+       </script>
+    </body>
+</html>
