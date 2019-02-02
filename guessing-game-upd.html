@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guessing Game Demo</title>
+    </head>
+    <body>
+       <!-- body content goes here -->
+       <h1>Guessing Game</h1>
+       <script>
+           var user = prompt('what is your name?');
+           console.log('User Name:'+user); 
+           alert('Hi there '+ user + 'I\'m going to ask you few questions.');
+           var finalfruit = '';
+            for (i=1;i<4;i++) {
+                fruitinput = input('Banana',i);
+                finalfruit = finalfruit+' '+fruitinput;
+            }
+            alert("I love"+finalfruit);
+
+             function input (fruit,i)
+             {
+                var answer = prompt('I love '+fruit+' Please enter the fruit '+i+' you love');
+                alert('Great to know that you love '+ answer+' I too love it');
+                console.log('User Name:'+answer); 
+                return answer;
+           }
+        </script>
+        <p> Please enter the fruit 1 you love</p>
+        <p> Please enter the fruit 2 you love</p>
+        <p> Please enter the fruit 3 you love</p>
+    </body>
+</html>
